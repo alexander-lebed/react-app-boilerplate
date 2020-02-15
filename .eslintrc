@@ -1,0 +1,42 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react", "flowtype"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "16.3.2"
+    },
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "rules": {
+    "no-console": "off",
+    "linebreak-style": "off", //["error", "windows"],
+    "react/display-name": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "import/no-named-as-default": "off",
+    "padded-blocks": "off",
+    "comma-dangle": "off",
+    "indent": [2, 4, {"SwitchCase": 1}]
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:flowtype/recommended"
+  ]
+}
