@@ -1,5 +1,4 @@
 const path = require('path');
-const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 const globImporter = require('node-sass-glob-importer');
 const packageJson = require("./package.json");
 
@@ -15,11 +14,6 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         publicPath: '/dist/'
     },
-    plugins: [
-        new MomentLocalesPlugin({
-            localesToKeep: ['es', 'ru'],
-        }),
-    ],
     module: {
         rules: [
             {

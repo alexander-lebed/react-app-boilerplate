@@ -9,9 +9,7 @@ module.exports = merge(baseWebpackConfig, {
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
-                NODE_ENV: JSON.stringify('development'),
                 API_HOST: JSON.stringify('http://localhost:3000/api'),
-                WS_ADDRESS: JSON.stringify('ws://localhost:3000'),
             }
         }),
         // new BundleAnalyzerPlugin()

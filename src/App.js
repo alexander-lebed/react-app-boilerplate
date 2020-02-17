@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import Spinner from './components/common/Spinner';
-import 'font-awesome/css/font-awesome.min.css';
 import './app.scss';
 
 const Home = React.lazy(() => import('./components/Home'));

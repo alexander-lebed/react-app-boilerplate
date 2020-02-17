@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import Modal, {Props as ModalProps} from '../Modal';
-import './index.scss';
 
 type Props = {
     onConfirm: Function;

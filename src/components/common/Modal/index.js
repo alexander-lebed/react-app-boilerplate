@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import './index.scss';
 
 export type Props = {
     className?: string,

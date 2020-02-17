@@ -1,12 +1,11 @@
-@import '../css/bootstrap.min.css';
 @import "./css/*";
 @import "./components/**/*.scss";
-//@import '../css/bootstrap.min.css';
-//@import '../css/comfortaa-font';
-//@import '../css/emoji-mart'; // Messages
-//@import '../css/style';
-//@import './components/compomemts';
-//@import './components/Messages/conversations'; // Messages
-//@import './components/People/people'; // People
-//@import './components/Profile/profile'; // Profile
-//@import './components/CV/cv'; // CV
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

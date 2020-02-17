@@ -4,7 +4,7 @@
     "react", "flowtype"
   ],
   "parserOptions": {
-    "ecmaVersion": 2017,
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
       "jsx": true
     }
@@ -25,7 +25,7 @@
   },
   "rules": {
     "no-console": "off",
-    "linebreak-style": "off", //["error", "windows"],
+    "linebreak-style": "off",
     "react/display-name": "off",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
