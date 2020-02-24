@@ -1,21 +1,10 @@
 // @flow
-import React, { useState, useEffect } from 'react';
-import { MoviesApi } from '../api'
+import React from 'react';
 import Listing from '../components/Listing';
-import type {ListItem} from '../types';
+import useList from '../hooks/useList';
 
 const ListingContainer = () => {
-    const [list, setList] = useState<Array<ListItem>>([]);
-
-    // todo: make custom hook with Context
-    useEffect(() => {
-        async function getList() {
-            const response = await MoviesApi.getBySection('estrenos-imprescindibles-en-taquilla');
-            setList(response.data.data.contents.data)
-        }
-        getList();
-    }, []);
-
+    const list = useList();
     return (
         <Listing list={list} />
     );
