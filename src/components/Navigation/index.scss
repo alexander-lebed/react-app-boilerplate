@@ -1,0 +1,14 @@
+@import "../../../css/variables";
+
+.Navigation {
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-right: 5px;
+      border: 1px solid $border-color;
+    }
+  }
+}
