@@ -1,1 +1,1 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{59:function(n,e,t){"use strict";t.r(e);var o=t(0),u=t.n(o);e.default=function(){return u.a.createElement("div",null,"Home")}}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{60:function(e,t,n){"use strict";n.r(t);var o=n(0),r=n.n(o),u=n(2);t.default=function(){var e=Object(o.useContext)(u.a.Context).theme;return r.a.createElement("div",null,"Home. Current theme is ",e)}}}]);

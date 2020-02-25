@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Spinner from './components/common/Spinner';
+import Store from './store';
 import Navigation from './components/Navigation';
 import './app.scss';
 
@@ -10,14 +11,16 @@ const PageNotFound = React.lazy(() => import('./components/PageNotFound'));
 
 const App = () => (
     <React.Suspense fallback={<Spinner />}>
-        <Router>
-            <Navigation />
-            <Switch>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/list' component={ListingContainer} />
-                <Route component={PageNotFound} />
-            </Switch>
-        </Router>
+        <Store>
+            <Router>
+                <Navigation />
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route exact path='/list' component={ListingContainer} />
+                    <Route component={PageNotFound} />
+                </Switch>
+            </Router>
+        </Store>
     </React.Suspense>
 );
 
