@@ -47,6 +47,6 @@ const stopHandler = (signal) => {
     process.exit(1);
 };
 
-process.on('SIGTERM', stopHandler, 'SIGTERM');
-process.on('SIGINT', stopHandler, 'SIGINT');
-process.on('SIGHUP', stopHandler, 'SIGINT');
+process.on('SIGTERM', stopHandler);
+process.on('SIGINT', stopHandler);
+process.on('SIGHUP', stopHandler);

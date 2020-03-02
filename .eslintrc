@@ -1,12 +1,14 @@
 {
-  "parser": "babel-eslint",
+  "parser":  "@typescript-eslint/parser",
   "plugins": [
-    "react", "flowtype"
+    "react", "@typescript-eslint"
   ],
   "parserOptions": {
+    "sourceType": "module",
     "ecmaVersion": 2020,
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "impliedStrict": true
     }
   },
   "env": {
@@ -15,28 +17,30 @@
     "node": true,
     "jest": true
   },
+  "ignorePatterns": ["node_modules/"],
   "settings": {
     "react": {
-      "version": "16.3.2"
-    },
-    "flowtype": {
-      "onlyFilesWithFlowAnnotation": true
+      "version": "detect"
     }
   },
   "rules": {
-    "no-console": "off",
-    "linebreak-style": "off",
-    "react/display-name": "off",
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "import/no-named-as-default": "off",
-    "padded-blocks": "off",
-    "comma-dangle": "off",
-    "indent": [2, 4, {"SwitchCase": 1}]
+//    "no-console": "off",
+//    "linebreak-style": "off",
+//    "react/display-name": "off",
+//    "react/jsx-uses-react": "error",
+//    "react/jsx-uses-vars": "error",
+//    "import/no-named-as-default": "off",
+//    "padded-blocks": "off",
+//    "comma-dangle": "off",
+//    "indent": [2, 4, {"SwitchCase": 1}],
+//    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/member-delimiter-style": "off"
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:flowtype/recommended"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ]
 }

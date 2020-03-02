@@ -1,7 +1,6 @@
-// @flow
 import React from 'react';
 
-type Props = {
+interface Props {
     title: string,
     label: string
 }

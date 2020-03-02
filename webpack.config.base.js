@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-var-requires: 0 */
 const path = require('path');
 const globImporter = require('node-sass-glob-importer');
 const packageJson = require("./package.json");
@@ -5,7 +6,7 @@ const packageJson = require("./package.json");
 module.exports = {
     context: __dirname,
     entry: {
-        javascript: './src/index.js',
+        javascript: './src/index.tsx',
         html: './index.html'
     },
     output: {
@@ -14,10 +15,13 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         publicPath: '/dist/'
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'],
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx|tsx|ts)$/,
                 exclude: /node_modules/,
                 use: [
                     {

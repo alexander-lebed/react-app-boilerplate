@@ -1,16 +1,12 @@
-// @flow
 import React from 'react';
 import Item from './Item';
-import type {ListItem} from '../../types';
+import {ListItem} from '../../types';
 
-type Props = {
+interface Props {
     list: Array<ListItem>
 }
 
 const Listing = (props: Props) => {
-
-    // todo: add Create, Update, Remove functionality
-
     return (
         <div>
             <h1>Listing</h1>

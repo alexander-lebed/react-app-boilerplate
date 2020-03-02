@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import Listing from '../components/Listing';
 import useList from '../hooks/useList';

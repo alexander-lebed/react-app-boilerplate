@@ -1,10 +1,9 @@
-// @flow
 import React from 'react';
 import Modal, {Props as ModalProps} from '../Modal';
 
-type Props = {
+interface Props extends ModalProps {
     onConfirm: Function;
-} & ModalProps;
+}
 
 const ConfirmationModal = (props: Props) => {
     return (

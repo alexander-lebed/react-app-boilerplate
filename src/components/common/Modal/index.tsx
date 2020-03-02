@@ -1,11 +1,10 @@
-// @flow
 import React from 'react';
 
-export type Props = {
+export interface Props {
     className?: string,
     isOpen: boolean,
-    onClose: Function,
-    children: any
+    onClose: (event?: React.MouseEvent) => void,
+    children: React.ReactNode
 }
 
 const Modal = (props: Props) => {

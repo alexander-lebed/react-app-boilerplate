@@ -10,18 +10,18 @@ const ListingContainer = React.lazy(() => import('./containers/ListingContainer'
 const PageNotFound = React.lazy(() => import('./components/PageNotFound'));
 
 const App = () => (
-    <React.Suspense fallback={<Spinner />}>
-        <Store>
-            <Router>
-                <Navigation />
+    <Store>
+        <Router>
+            <Navigation />
+            <React.Suspense fallback={<Spinner />}>
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/list' component={ListingContainer} />
                     <Route component={PageNotFound} />
                 </Switch>
-            </Router>
-        </Store>
-    </React.Suspense>
+            </React.Suspense>
+        </Router>
+    </Store>
 );
 
 export default App;

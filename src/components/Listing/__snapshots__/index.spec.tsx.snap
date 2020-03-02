@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listing should match snapshot 1`] = `
+<div>
+  <h1>
+    Listing
+  </h1>
+  <div
+    className="Item"
+  >
+    <div>
+      <i
+        className="fas fa-film"
+      />
+       
+      MovieName A
+    </div>
+    <div>
+      4,99 €
+    </div>
+  </div>
+  <div
+    className="Item"
+  >
+    <div>
+      <i
+        className="fas fa-film"
+      />
+       
+      MovieName B
+    </div>
+    <div>
+      3,99 €
+    </div>
+  </div>
+  <div
+    className="Item"
+  >
+    <div>
+      <i
+        className="fas fa-film"
+      />
+       
+      MovieName C
+    </div>
+    <div>
+      2,99 €
+    </div>
+  </div>
+</div>
+`;
