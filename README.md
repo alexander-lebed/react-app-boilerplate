@@ -14,10 +14,6 @@ yarn dev
 ```
 <sup>Then go to http://localhost:8082/</sup>
 
-Run (prod mode):
-```
-yarn start
-```
 #### Tests
 ```
 yarn test
